@@ -87,5 +87,10 @@ MapNode mapnode_translate_to_internal(MapNode n_from, u8 version);
 #define CONTENT_APPLE 0x819
 #define CONTENT_SAPLING 0x820
 #define CONTENT_STONEBRICK 34
+#define CONTENT_STEELSTONEBRICK 35
+#define CONTENT_GLASSLIGHT 36
+#define CONTENT_WOODJUNGLE 37
+#define CONTENT_COALCHECKER 38
+#define CONTENT_BRICKGREEN 39
 #endif
 

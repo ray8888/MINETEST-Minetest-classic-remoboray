@@ -126,6 +126,13 @@ InventoryItem *craft_get_result(InventoryItem **items)
 			defs_init++;
 		}
 
+// Woodjunlge
+		{
+			defs[defs_init].specs[0] = ItemSpec(ITEM_MATERIAL, CONTENT_JUNGLETREE);
+			defs[defs_init].item = new MaterialItem(CONTENT_WOODJUNGLE, 4);
+			defs_init++;
+		}
+
 		// Fence
 		{
 			defs[defs_init].specs[3] = ItemSpec(ITEM_CRAFT, "Stick");
@@ -394,7 +401,37 @@ InventoryItem *craft_get_result(InventoryItem **items)
 			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
 			defs[defs_init].specs[6] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
 			defs[defs_init].specs[7] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
-			defs[defs_init].item = new MaterialItem(CONTENT_STONEBRICK, 1);
+			defs[defs_init].item = new MaterialItem(CONTENT_STONEBRICK, 4);
+			defs_init++;
+		}
+
+		// Glasslight
+		{
+			defs[defs_init].specs[3] = ItemSpec(ITEM_MATERIAL, CONTENT_GLASS);
+			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_GLASS);
+			defs[defs_init].specs[6] = ItemSpec(ITEM_MATERIAL, CONTENT_GLASS);
+			defs[defs_init].specs[7] = ItemSpec(ITEM_MATERIAL, CONTENT_GLASS);
+			defs[defs_init].item = new MaterialItem(CONTENT_GLASSLIGHT, 4);
+			defs_init++;
+		}
+
+		// Steelstonebrick
+		{
+			defs[defs_init].specs[3] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
+			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_MESE);
+			defs[defs_init].specs[6] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
+			defs[defs_init].specs[7] = ItemSpec(ITEM_MATERIAL, CONTENT_MESE);
+			defs[defs_init].item = new MaterialItem(CONTENT_STEELSTONEBRICK, 4);
+			defs_init++;
+		}
+
+		// Coalchecker
+		{
+			defs[defs_init].specs[3] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
+			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_GRAVEL);
+			defs[defs_init].specs[6] = ItemSpec(ITEM_MATERIAL, CONTENT_STONE);
+			defs[defs_init].specs[7] = ItemSpec(ITEM_MATERIAL, CONTENT_GRAVEL);
+			defs[defs_init].item = new MaterialItem(CONTENT_COALCHECKER, 4);
 			defs_init++;
 		}
 
@@ -418,7 +455,17 @@ InventoryItem *craft_get_result(InventoryItem **items)
 			defs_init++;
 		}
 
-		// Cotton
+		// Brickgreen
+		{
+			defs[defs_init].specs[3] = ItemSpec(ITEM_MATERIAL, CONTENT_BRICK);
+			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_CACTUS);
+			defs[defs_init].specs[6] = ItemSpec(ITEM_MATERIAL, CONTENT_BRICK);
+			defs[defs_init].specs[7] = ItemSpec(ITEM_MATERIAL, CONTENT_CACTUS);
+			defs[defs_init].item = new MaterialItem(CONTENT_BRICKGREEN, 4);
+			defs_init++;
+		}
+
+	// Cotton
 		{
 			defs[defs_init].specs[3] = ItemSpec(ITEM_MATERIAL, CONTENT_JUNGLEGRASS);
 			defs[defs_init].specs[4] = ItemSpec(ITEM_MATERIAL, CONTENT_JUNGLEGRASS);
